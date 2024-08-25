@@ -20,7 +20,6 @@ class OpenAIModel(ModelInterface):
     def __init__(self, api_key: str):
         self.api_key = api_key
         self.base_url = 'https://api.openai.com/v1'
-        self.test="test"
 
     def _request(self, method, endpoint, body=None, files=None):
         self.headers = {
