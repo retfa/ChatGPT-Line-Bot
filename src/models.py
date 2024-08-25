@@ -60,6 +60,6 @@ class OpenAIModel(ModelInterface):
         json_body = {
             "prompt": prompt,
             "n": 1,
-            "size": "512x512"
+            "size": "256x512"
         }
         return self._request('POST', '/images/generations', body=json_body)
